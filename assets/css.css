@@ -1,0 +1,119 @@
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #1E3A8A;
+
+    }
+
+    .nav-bar h1 {
+        color: #FFFFFF;
+    }
+
+    .btn-cad {
+        border: none;
+        padding: 5px 20px 5px 20px;
+        border-radius: 5px;
+        background-color: #1E3A8A;
+        color: #ffff;
+    }
+
+    .users {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    .user-info {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .user-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #1E3A8A;
+        border-radius: 50%;
+    }
+
+    .user-icon i {
+        color: #ffff;
+        font-size: 1.5rem;
+    }
+
+    .btn-deletar {
+        background-color: #DC2626;
+        border: none;
+        color: #ffff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+
+    }
+
+    .btn-deletar button {
+        font-size: 1.5 rem;
+        font-weight: 600;
+
+    }
+
+    .btn-editar {
+        background-color: #F59E0B;
+        border: none;
+        color: #ffff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+
+    }
+
+    .btn-editar button {
+        font-size: 1.5 rem;
+        font-weight: 600;
+
+    }
+
+    .btn-visualizar {
+        background-color: #2563EB;
+        border: none;
+        color: #ffff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+
+    }
+
+    .btn-visualizar button {
+        font-size: 1.5 rem;
+        font-weight: 600;
+
+    }
+
+    .user-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabela-users .btn-editar {
+        background: #28a745;
+        color: white;
+        border-radius: 6px;
+    }
+
+    .tabela-users .btn-excluir {
+        background: #dc3545;
+        color: white;
+        border-radius: 6px;
+    }
+
+    .tabela-users .btn-visualizar {
+        background: #007bff;
+        color: white;
+        border-radius: 6px;
+    }

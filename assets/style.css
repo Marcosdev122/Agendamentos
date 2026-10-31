@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f4f4;
+    font-family:Arial;
+}
+
+.card{
+    width:350px;
+    background:white;
+    margin:100px auto;
+    padding:30px;
+    border-radius:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+}

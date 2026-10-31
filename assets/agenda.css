@@ -1,0 +1,345 @@
+body{
+    background-color: #032d6b;
+    font-family: Arial, sans-serif;
+}
+
+/* CARD */
+
+.card{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* TABELA */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background: #0d6efd;
+    color: #fff;
+}
+
+th,
+td{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background: #f8f9fa;
+}
+
+/* MODAL */
+
+.modal{
+    display:none;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+
+    z-index:9999;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    width:460px;
+    max-width:90vw;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    position:relative;
+
+    max-height:85vh;
+    overflow-y:auto;
+}
+.modal-content input,
+.modal-content select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+/* Linha de campos lado a lado */
+.linha-campos{
+    display:flex;
+    gap:0px; /* diminui a distância entre os campos */
+    align-items:flex-end;
+}
+
+.linha-campos .campo{
+    width:auto;
+    flex:none;
+}
+
+#data_inicio_admin,
+#data_fim_admin{
+    width:150px;
+}
+
+#horario_admin{
+    width:100px;
+}
+
+#vagas_admin{
+    width:60px;
+}
+/* Data */
+.linha-campos input[type="date"]{
+    width:170px;
+}
+
+/* Horário */
+.linha-campos input[type="time"]{
+    width:120px;
+}
+
+/* Vagas */
+.linha-campos input[type="number"]{
+    width:70px;
+}
+/* FECHAR */
+
+.fechar,
+.fecharDisponibilidade{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #888;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fecharDisponibilidade:hover{
+    color: #dc3545;
+}
+
+/* CAMPOS */
+
+.campo{
+    margin-bottom: 18px;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.modal-content select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+
+
+/* DIAS DA SEMANA */
+
+.dias-semana{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.dias-semana label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#vagas_admin{
+    width: 44px;
+}
+#horario_admin{
+    width: 100px;
+}
+#data_inicio_admin,
+#data_fim_admin{
+    width: 120px;
+}
+/* BOTÃO SALVAR */
+
+.btn-salvar{
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0d6efd;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-salvar:hover{
+    background: #0b5ed7;
+}
+
+/* BOTÃO NOVO */
+
+.btn-cad{
+    background: linear-gradient(135deg,#0d6efd,#4f9cff);
+    color: #fff;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 12px 24px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-cad:hover{
+    background: linear-gradient(135deg,#0b5ed7,#3b82f6);
+
+    box-shadow: 0 10px 20px rgba(13,110,253,.25);
+}
+
+/* BOTÃO CANCELAR */
+
+.btn-cancelar{
+    background: #fff;
+    color: #dc3545;
+
+    border: 1px solid #dc3545;
+
+    padding: 8px 16px;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-cancelar:hover{
+    background: #dc3545;
+    color: #fff;
+}
+
+/* BOTÃO EXCLUIR */
+
+.btn-excluir{
+    background: #dc3545;
+    color: #fff;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.btn-excluir:hover{
+    opacity: .9;
+}
+
+/* SWEET ALERT */
+
+.swal2-container{
+    z-index: 20000 !important;
+}
+
+/* button de voltar */
+.menu-config{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.btn-config{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn-config:hover{
+    transform: rotate(90deg);
+    background: #0056b3;
+}
+
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: #fff;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.menu-dropdown a{
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-dropdown a:hover{
+    background: #f2f2f2;
+}
